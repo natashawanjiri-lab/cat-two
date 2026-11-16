@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors - Q3a</title>
+    <style>
+        /* 1. Element Selector - styles ALL p tags */
+        p {
+            color: black;
+            font-size: 16px;
+        }
+
+        /* 2. Class Selector - styles any element with class="highlight" */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* 3. ID Selector - styles the ONE element with id="main-title" */
+        #main-title {
+            color: darkgreen;
+            text-align: center;
+        }
+
+        /* 4. Group Selector - styles h2 AND h3 together */
+        h2, h3 {
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-title">CSS Selectors Explained</h1>
+
+    <h2>Element Selector</h2>
+    <p>This paragraph is styled by the element selector p. All paragraphs look like this.</p>
+
+    <h2>Class Selector</h2>
+    <p class="highlight">This paragraph uses class="highlight" so it has a yellow background.</p>
+    <p>This paragraph does NOT have the class, so it has no yellow background.</p>
+
+    <h3>ID Selector</h3>
+    <p>The main title at the top uses id="main-title" so it is green and centred. IDs are unique - only one per page.</p>
+
+    <h3>Group Selector</h3>
+    <p>Both h2 and h3 headings are dark blue because we grouped them: h2, h3.</p>
+
+</body>
+</html>
